@@ -167,107 +167,102 @@
                   </defs>
 
                   <g class="g-edges" filter="url(#heroDsGlow)">
-                    <!-- Dense, directed weighted graph (datasheet-driven nodes) -->
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="640" y1="150" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="220" y1="180" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="720" y1="330" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="340" y1="410" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="700" y1="60" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="540" y1="320" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="430" y1="480" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="260" y1="360" x2="520" y2="240" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="610" y1="430" x2="340" y2="410" />
+                    <!-- Center hub with spokes; coordinates spread to avoid text overlap -->
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="260" x2="260" y2="150" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="260" x2="360" y2="420" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="260" x2="760" y2="340" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="260" x2="900" y2="260" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="260" x2="670" y2="140" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="260" x2="560" y2="360" />
 
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="240" x2="910" y2="250" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="240" x2="720" y2="330" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="240" x2="540" y2="320" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="520" y1="240" x2="640" y2="150" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="640" y1="150" x2="430" y2="480" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="220" y1="180" x2="260" y2="360" />
+                    <!-- Upstream conditions into core -->
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="220" y1="260" x2="520" y2="260" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="300" y1="320" x2="520" y2="260" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="620" y1="430" x2="360" y2="420" />
 
-                    <!-- VIN min/max + VOUT min/max links (extra complexity, still datasheet-aligned) -->
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="640" y1="150" x2="580" y2="115" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="640" y1="150" x2="685" y2="95" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="910" y1="250" x2="830" y2="310" />
-                    <line class="g-edge" marker-end="url(#dsArrow)" x1="910" y1="250" x2="955" y2="340" />
+                    <!-- VIN / VOUT min/max satellites -->
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="670" y1="140" x2="600" y2="90" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="670" y1="140" x2="760" y2="90" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="900" y1="260" x2="840" y2="330" />
+                    <line class="g-edge" marker-end="url(#dsArrow)" x1="900" y1="260" x2="960" y2="340" />
                   </g>
 
                   <g class="g-nodes" filter="url(#heroDsGlow)">
                     <!-- Positions are in viewBox coords; labels are short for readability -->
-                    <g class="g-node" transform="translate(220,180)">
+                    <g class="g-node" transform="translate(260,150)">
                       <circle class="g-node__disc" r="34" />
                       <text class="g-node__label" y="10" text-anchor="middle">6</text>
                       <text class="g-node__meta" y="52" text-anchor="middle">THERMAL θJA 48°C/W</text>
                     </g>
-                    <g class="g-node" transform="translate(520,240)">
+                    <g class="g-node" transform="translate(520,260)">
                       <circle class="g-node__disc" r="36" />
                       <text class="g-node__label" y="11" text-anchor="middle">4</text>
                       <text class="g-node__meta" y="55" text-anchor="middle">CORE GRAPH HUB</text>
                     </g>
-                    <g class="g-node" transform="translate(640,150)">
+                    <g class="g-node" transform="translate(670,140)">
                       <circle class="g-node__disc" r="34" />
                       <text class="g-node__label" y="10" text-anchor="middle">5</text>
                       <text class="g-node__meta" y="52" text-anchor="middle">INPUT RAIL VIN 2.7–5.5V</text>
                     </g>
-                    <g class="g-node" transform="translate(340,410)">
+                    <g class="g-node" transform="translate(360,420)">
                       <circle class="g-node__disc" r="34" />
                       <text class="g-node__label" y="10" text-anchor="middle">3</text>
                       <text class="g-node__meta" y="52" text-anchor="middle">PACKAGE 8L-DFN</text>
                     </g>
-                    <g class="g-node" transform="translate(720,330)">
+                    <g class="g-node" transform="translate(760,340)">
                       <circle class="g-node__disc" r="34" />
                       <text class="g-node__label" y="10" text-anchor="middle">2</text>
                       <text class="g-node__meta" y="52" text-anchor="middle">LOAD IOUT 0–800mA</text>
                     </g>
-                    <g class="g-node" transform="translate(910,250)">
+                    <g class="g-node" transform="translate(900,260)">
                       <circle class="g-node__disc g-node__disc--accent" r="34" />
                       <text class="g-node__label" y="10" text-anchor="middle">1</text>
                       <text class="g-node__meta" y="52" text-anchor="middle">OUTPUT TARGET VOUT ≥1.2V</text>
                     </g>
 
-                    <g class="g-node" transform="translate(700,60)">
+                    <g class="g-node" transform="translate(700,80)">
                       <circle class="g-node__disc" r="30" />
                       <text class="g-node__label" y="9" text-anchor="middle">7</text>
                       <text class="g-node__meta" y="46" text-anchor="middle">PSRR 70dB @1kHz</text>
                     </g>
-                    <g class="g-node" transform="translate(540,320)">
+                    <g class="g-node" transform="translate(560,360)">
                       <circle class="g-node__disc" r="30" />
                       <text class="g-node__label" y="9" text-anchor="middle">8</text>
                       <text class="g-node__meta" y="46" text-anchor="middle">NOISE 50nV/√Hz</text>
                     </g>
-                    <g class="g-node" transform="translate(430,480)">
+                    <g class="g-node" transform="translate(430,470)">
                       <circle class="g-node__disc" r="30" />
                       <text class="g-node__label" y="9" text-anchor="middle">9</text>
                       <text class="g-node__meta" y="46" text-anchor="middle">LINE REG 0.02–0.08%/V</text>
                     </g>
-                    <g class="g-node" transform="translate(260,360)">
+                    <g class="g-node" transform="translate(220,260)">
                       <circle class="g-node__disc" r="30" />
                       <text class="g-node__label" y="9" text-anchor="middle">10</text>
                       <text class="g-node__meta" y="46" text-anchor="middle">TEMPERATURE TA −40..+125°C</text>
                     </g>
-                    <g class="g-node" transform="translate(610,430)">
+                    <g class="g-node" transform="translate(620,430)">
                       <circle class="g-node__disc g-node__disc--accent" r="30" />
                       <text class="g-node__label" y="9" text-anchor="middle">11</text>
                       <text class="g-node__meta" y="46" text-anchor="middle">STABILITY EP → GND</text>
                     </g>
 
                     <!-- Extra labeled nodes derived from datasheet min/max -->
-                    <g class="g-node" transform="translate(580,115)">
+                    <g class="g-node" transform="translate(600,90)">
                       <circle class="g-node__disc" r="28" />
                       <text class="g-node__label" y="9" text-anchor="middle">12</text>
                       <text class="g-node__meta" y="44" text-anchor="middle">VIN MIN 2.7V</text>
                     </g>
-                    <g class="g-node" transform="translate(685,95)">
+                    <g class="g-node" transform="translate(760,90)">
                       <circle class="g-node__disc" r="28" />
                       <text class="g-node__label" y="9" text-anchor="middle">13</text>
                       <text class="g-node__meta" y="44" text-anchor="middle">VIN MAX 5.5V</text>
                     </g>
-                    <g class="g-node" transform="translate(830,310)">
+                    <g class="g-node" transform="translate(840,330)">
                       <circle class="g-node__disc" r="28" />
                       <text class="g-node__label" y="9" text-anchor="middle">14</text>
                       <text class="g-node__meta" y="44" text-anchor="middle">VOUT MIN 1.2V</text>
                     </g>
-                    <g class="g-node" transform="translate(955,340)">
+                    <g class="g-node" transform="translate(960,340)">
                       <circle class="g-node__disc g-node__disc--accent" r="28" />
                       <text class="g-node__label" y="9" text-anchor="middle">15</text>
                       <text class="g-node__meta" y="44" text-anchor="middle">VOUT MAX VIN−0.2</text>
